@@ -420,10 +420,10 @@ footer{
     }
 
     .grille-activites-petite{
+        height: 250px;
         width: 33%;
     }
     
-
 }
 
 @media (max-width: 768px){
