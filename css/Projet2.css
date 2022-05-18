@@ -179,7 +179,8 @@ header nav a:hover{
 }
 
 .carte:hover{
-    margin-bottom: 10px;
+    height: 95%;
+    width: 95%;
 }
 
 .image-carte{
@@ -219,25 +220,26 @@ header nav a:hover{
     color: #F2F2F2;
 }
 
+/* Section des hébergements */
 
 #hebergements{
     height: fit-content;
     display: flex;
+    justify-content: space-between;
 }
 
+/* Section des hébergements à Marseille */
+
 #hebergements-marseille{
-    width: 63%;    
+    width:64%;
     background-color: #F2F2F2;
-    margin: 10px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
 }
 
-
 #hebergements-marseille h2{
-    margin:30px 0px 0px 30px
-    
+    margin:30px 0px 15px 30px  
 }
 
 #afficher-plus{
@@ -245,36 +247,29 @@ header nav a:hover{
     font-weight: bold;
 }
 
-
-
 #zone-carte-hebergement{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 .grille-hebergement-marseille{
-    width: 33%;
+    width: 32%;
     height: 240px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;  
 }
-
-
 
 /* Section des hébergements populaires */
 
 #hebergements-populaires{
-    width: 33%;    
+    width: 33%;
     background-color: #F2F2F2;
-    margin: 10px;
     border-radius: 20px;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;   
 }
 
 #titre-section-populaire{
@@ -300,8 +295,7 @@ header nav a:hover{
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;  
 }
 
 .grille-hebergement-populaire .carte{
@@ -309,31 +303,26 @@ header nav a:hover{
 }
 
 .grille-hebergement-populaire .image-carte {
-    width: 33%;    
+    width: 40%;    
     height: auto;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: inherit;
-
 }
+
 .grille-hebergement-populaire .texte-carte{
-    width: 66%;    
-    margin: 10px;
+    width: 60%;    
+    margin: 10px 0px 10px 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 .grille-hebergement-populaire .etoile{
     flex-grow: 2;
     display: flex;
     align-items: flex-end;
-
 }
-
-
-
 
 /* section des activités */
 
@@ -341,23 +330,23 @@ header nav a:hover{
     height: 600px;
     display: flex;
     flex-direction: column;
-}
-
-#zone-carte-activites{
-    height: 100%;
-    display: flex;
-    flex-flow: column wrap;
+    margin-top: 40px;
 }
 
 #activites h2{
     margin-left: 20px;
 }
 
+#zone-carte-activites{
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
 
 #zone-carte-activites .image-carte{
     height: 80%;
 }
-
 
 .grille-activites-grande{
     height: 500px;
@@ -365,11 +354,10 @@ header nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .grille-activites-petite{
-    height: 250px;
+    height: 235px;
     width: 25%;
     display: flex;
     justify-content: center;
@@ -383,7 +371,6 @@ footer{
     background-color: #F2F2F2;
     padding-left: 30px;
     padding-right: 30px;
-
 }
 
 .colonne-footer{
