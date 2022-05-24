@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "Raleway";
-    src: url("../css/Raleway/Raleway-VariableFont_wght.ttf");
+    src: url("../css/Raleway-VariableFont_wght.ttf");
     font-weight: 100 1000;
 }
 
@@ -18,7 +18,7 @@
 /* Propriétes pour le main */
 
 main{
-    margin: 30px;
+    margin: 20px 50px 50px 50px;
 }
 
 /* Header */
@@ -30,7 +30,7 @@ header{
 }
 
 header img{
-    padding-left:40px;
+    padding-left:80px;
 }
 
 header nav{
@@ -54,12 +54,18 @@ header nav a:hover{
 
 /* Section de recherche */
 
+
+#section-de-recherche h2,p{
+    margin: 10px 0px 10px 0px;
+}
+
+
 #section-de-recherche form{
     width: fit-content;
     border-radius: 20px;
     display: flex;
     border: solid #F2F2F2;
-
+    margin: 20px 0px 10px 0px;
 }
 
 #logo-de-recherche{
@@ -75,6 +81,7 @@ header nav a:hover{
 #texte-de-recherche{
     padding-left: 20px;
     border: none;
+    font-weight: bold;
 
 }
 
@@ -112,7 +119,7 @@ header nav a:hover{
 }
 
 #section-des-filtres h3{
-    margin: 20px 20px 20px 0px;
+    margin: 10px 20px 10px 0px;
 
 }
 
@@ -124,7 +131,7 @@ header nav a:hover{
 .filtres{
     display:flex;
     align-items: center;
-    margin: 20px 20px 20px 0px;
+    margin: 10px 20px 10px 0px;
     border:solid #F2F2F2;
     border-radius:30px;
 }
@@ -156,6 +163,7 @@ header nav a:hover{
 #info{
     display: flex;
     align-items:center;
+    margin-bottom: 30px;
 }
 
 #icone-info{
@@ -243,7 +251,7 @@ header nav a:hover{
 }
 
 #afficher-plus{
-    margin:30px;
+    margin:30px 0px 40px 30px;
     font-weight: bold;
 }
 
@@ -259,7 +267,7 @@ header nav a:hover{
     height: 240px;
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
 }
 
 /* Section des hébergements populaires */
@@ -287,7 +295,9 @@ header nav a:hover{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    flex-grow:1;
+    justify-content: space-around;
+    margin-bottom: 30px;
 }
 
 .grille-hebergement-populaire{
@@ -327,25 +337,32 @@ header nav a:hover{
 /* section des activités */
 
 #activites{
-    height: 600px;
+    height: 550px;
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 #activites h2{
-    margin-left: 20px;
+    margin: 30px 0px 30px 20px;
 }
 
 #zone-carte-activites{
     height: 100%;
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 #zone-carte-activites .image-carte{
-    height: 80%;
+    height: 90%;
+}
+
+#zone-carte-activites .texte-carte{
+    padding: 10px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
 }
 
 .grille-activites-grande{
@@ -353,7 +370,6 @@ header nav a:hover{
     width: 25%;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .grille-activites-petite{
@@ -361,7 +377,6 @@ header nav a:hover{
     width: 25%;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 /* Section du footer */
@@ -369,7 +384,7 @@ header nav a:hover{
 footer{
     display: flex;
     background-color: #F2F2F2;
-    padding-left: 30px;
+    padding-left: 50px;
     padding-right: 30px;
 }
 
@@ -390,12 +405,14 @@ footer{
     text-decoration: underline;
 }
 
-
-
-
-
+/*responsive pour tablette */
 
 @media (max-width: 992px){
+
+
+    main{
+        margin: 20px 20px 50px 20px;
+    }
 
     .grille-hebergement-marseille{
         flex-basis: 50%;
@@ -425,6 +442,8 @@ footer{
     }
     
 }
+
+/* Responsive pour mobile */
 
 @media (max-width: 768px){
 
@@ -461,6 +480,14 @@ footer{
 
     /* Section de recherche pour mobile */
 
+    #section-de-recherche{
+        margin: 30px;
+    }
+
+    #section-de-recherche p{
+        margin-bottom: 30px;
+    }
+    
     #section-de-recherche form{
         margin: auto;
     }
@@ -483,9 +510,27 @@ footer{
         font-size: large;
     }
 
+    /* Section des filtres pour mobile */
+
+    #section-des-filtres{
+        margin:30px;
+    }
+
+    /* Section info pour mobile */
+
+    #info{
+        margin:30px;
+    }
+
+    /* Section des hébergements pour mobile */
+
 
     #hebergements{
         flex-direction: column-reverse;
+    }
+
+    #hebergements-marseille{
+        background-color: white;
     }
 
 
@@ -501,11 +546,16 @@ footer{
         flex-basis: 100%;
     }
 
+    /* Section des activités pour mobile */
+   
     #activites{
         height: fit-content;
         display: flex;
         flex-direction: column;
-    
+    }
+
+    #activites h2{
+        margin-left: 40px;
     }
     
     #zone-carte-activites{
@@ -527,9 +577,12 @@ footer{
         height: 240px;
         width: 100%;
     }
-    
-    
 
+    /* Footer pour mobile */
+
+    footer{
+        flex-direction: column;
+    }
 
 }
 
