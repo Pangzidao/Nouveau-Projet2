@@ -340,7 +340,6 @@ header nav a:hover{
     height: 550px;
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
 }
 
 #activites h2{
@@ -555,7 +554,7 @@ footer{
     }
 
     #activites h2{
-        margin-left: 40px;
+        margin: 0px 0px 30px 30px;
     }
     
     #zone-carte-activites{
